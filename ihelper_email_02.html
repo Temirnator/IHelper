@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+  </head>
+  <body>
+
+<p>Dear <b><?= tutor.fullname ?></b> ,</p>
+
+<p>Hope you are doing well.</p>
+
+<p>My name is <b><?= tutor.username ?></b>. For these 3 months I will be your Personal Coordinator.<br>
+If you have any questions, I am the first person you should contact.<br>
+Here is <b>my phone number: <?= tutor.userphone ?></b>.</p>
+
+<h3>Kid Information:</h3>
+You have officially became a part of the IHelper project and we are assigning the following child to be your student:
+<ol>
+  <li> Full name: <b><?= tutor.kidname ?></b></li>
+  <li> Language: <b><?= tutor.kidlang ?></b></li>
+  <li> Grade: <b><?= tutor.kidgrade ?></b></li>
+  <li> Comments: <b><?= tutor.kidSVcategory ?></b></li>
+  <li> Parent's full name: <b><?= tutor.parentname ?></b></li>
+  <li> Parent's phone: <b><?= tutor.parentphone ?></b></li>
+</ol>
+<h3>To do:</h3>
+<ol>
+  <li>Notify kid's parent(-s) that you will be tutoring their child;</li>
+  <li>Agree on a learning and communication platform and provide technical support if needed (Zoom/Skype/Meet/Teams, Telegram/Whatsapp);</li>
+  <li>Agree on a lesson schedule (standard time - weekends, but you are free to choose another day(-s));</li>
+  <li>Fill out <b><a href= <?= tutor.survey2?>>this form</a></b> indicating whether you agree to teach the child and the date when you are ready to start teaching;</li>
+</ol>
+
+<h3>Important dates:</h3>
+<ol>
+  <li>Start of lessons: <b>5 February - 13 February;</b></li>
+  <li>End of lessons*: <b>1 May - 21 May;</b></li>
+  <li>Student Feedback Submission: <b>Every 4 Weeks**, Sunday 23:59;</b></li>
+</ol>
+<br>* - We understand that university students usually have a very tight schedule and that’s why we allow them to have 3 weeks in the period that are free from any lessons for midterm/final exams/exam preparation or other important university deadlines but they have to conduct these postponed lessons later to meet the 22-hour requirement.
+<br>** - That is, lessons 1, 6, and 11 are used for assessing performance of your student.
+
+<h3>Useful links: </h3>
+<ol>
+  <li><a href= <?= tutor.kidPageLink ?>>Kid page link</a> (write lesson reports and student progress reports here);</li>
+  <li><a href= <?= tutor.instructions ?> >Tutor Instructions; </a></li>
+  <li><a href= <?= tutor.telegramchat ?> >Telegram group chat (announcements);</a></li>
+  <li><a href= <?= tutor.academicMaterials ?> >Academic Materials</a></li>
+  <li><a href= <?= tutor.survey7 ?> >Feedback Form</a> (reach out to us with your ideas or suggestions); </li>
+</ol>
+
+<br>If you have any questions don't hesitate to contact me.
+<br>--
+<br>Kind regards, <?= tutor.username ?>.
+<br>                                                               
+<br><?= tutor.userposition ?> of IHelper Project,
+<br>NU Red Crescent Society,
+<br>AOE "Nazarbayev University"
+<br>53, Kabanbay batyr ave.,
+<br>Astana, Republic of Kazakhstan
+<br>010000.
+<br>Email: <?= tutor.useremail ?>
+<br>
+
+  </body>
+</html>
