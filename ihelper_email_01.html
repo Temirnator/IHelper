@@ -7,11 +7,11 @@
 <p style="color:red;"><i>*read <b>a summary</b> of this email at the bottom.</i></p>
 
 
-<p>Dear <?= tutor.fullname ?> ,</p>
+<p>Dear <?= senderData.fullname ?> ,</p>
 
 <p>Welcome to the IHelper Project! We are so excited for you to join us. Your willingness to help other people and open-heartedness make you the perfect fit for the <b>tutoring position.</b></p>
 
-<p><b>I am <?= tutor.username ?>,</b> and I will be <b>your <?= tutor.userposition ?>.</b> Feel free to reach out to me with <b>any questions during the onboarding process.</b></p>
+<p><b>I am <?= senderData.sendername ?>,</b> and I will be <b>your <?= senderData.senderposition ?>.</b> Feel free to reach out to me with <b>any questions during the onboarding process.</b></p>
 
 
 <h3>Project Description</h3>
@@ -20,7 +20,7 @@
 <p>We, as an organisational team, need to help tutors to meet high standards of tutoring and control the process of free social tutoring. Our coordinators are expected to have a significant amount of responsibility and readiness to dedicate their time to children and tutors of the IHelper project. We believe that our project will help to reduce educational inequality and positively influence the inclusion in the society.</p>
 
 <h3>Format of Lessons</h3>
-<p>Tutors of the IHelper project are supposed to teach Mathematics and English* for kids from socially vulnerable categories for 2 hours a week for 11 weeks** (22 hours in total). Each month, or 4 weeks to be exact, tutors need to prepare detailed feedback on the kids they are tutoring. This will allow us to track how effectively kids are being taught.
+<p>Tutors of the IHelper project are supposed to teach Mathematics and English* for kids from socially vulnerable categories for 2 hours a week for 11 weeks** (22 hours in total). Each month, or every 4 weeks to be exact, tutors need to provide feedback on the performance of the kid they are tutoring. Moreover, tutors are supposed to submit lesson reports after each hour of tutoring. This will allow us to track how effectively kids are being taught and how many lessons were taught by a tutor in total.
 </p>
 
 <p>After successful completion of 22 hours of teaching tutors receive a certificate of participation in the project. If tutors demonstrate an outstanding performance in teaching kids, which we can track either by feedback from parents and their kids or by presenting academic achievements of students that were achieved as a result of effective tutoring, tutors are going to receive a special Tutors Awards Certificate.
@@ -35,23 +35,24 @@
 <h3 style="color:red;">Summary</h3>
 <ul>
   <li>Congrats!</li>
-  <li>I am your <?= tutor.userposition ?>, <?= tutor.username ?>.</li>
+  <li>I am your <?= senderData.senderposition ?>, <?= senderData.sendername ?>.</li>
   <li>IHelper Project is about teaching SVC kids.</li>
   <li>Be responsible.</li>
 </ul>
 
 <h4>Format:</h4>
 <ol>
-  <li>Total period: 14 February - 21 May (teach any 22 hours in this period);</li>
+  <li>Total period: 3 months from your start (teach any 22 hours in this period);</li>
   <li>Lessons: 2hrs per week + Weekly Lesson Report (Deadline: Sunday 23:59);</li>
-  <li>Kid Performance Reports: Week 1, Week 6, Week 11, 3 Reports in total, (Deadline: Sunday 23:59);</li>
+  <li>Assessments: Week 1, Week 6, Week 11, 3 Reports in total, (Deadline: Sunday 23:59);
+</li>
   <li>Lesson Plans: Optional but suggested;</li>
 </ol> 
 <h3 style="color:red;">End of Summary</h3>
 
 <h3>To do:</h3>  
 <ol>
-  <li>Fill out <b><a href= <?= tutor.survey1?>>this form</a></b> to indicate whether you agree to participate in the IHelper Project as a tutor;</li>
+  <li>Fill out <b><a href= <?= senderData.participationAgreementForm?>>this form</a></b> to indicate whether you agree to participate in the IHelper Project as a tutor;</li>
 </ol>
 
 <h3>Advices on teaching SVC kids:</h3>
@@ -65,22 +66,24 @@
 
 <h3>Useful Links:</h3>  
 <ol>
-  <li><a href= <?= tutor.instructions ?> >Tutor Instructions; </a></li>
-  <li><a href= <?= tutor.telegramchat ?> >Telegram group chat (announcements);</a></li>
-  <li><a href= <?= tutor.survey7 ?> >Feedback Form</a> (reach out to us with your ideas or suggestions); </li>
+  <li><a href= <?= senderData.participationAgreementForm?> >Participation Agreement Form;
+</li>
+  <li>Tutor Resources;</li>
+  <li><a href= <?= senderData.telegramchat ?> >Telegram group chat (announcements);</a></li>
+  <li><a href= <?= senderData.feedbackForm ?> >Feedback Form</a> (reach out to us with your ideas, comments, questions or suggestions);</li>
 </ol>
 
 <br>If you have any questions don't hesitate to contact me.
 <br>--
-<br>Kind regards, <?= tutor.username ?>.
+<br>Kind regards, <?= senderData.sendername ?>.
 <br>                                                               
-<br><?= tutor.userposition ?> of IHelper Project,
+<br><?= senderData.senderposition ?> of IHelper Project,
 <br>NU Red Crescent Society,
 <br>AOE "Nazarbayev University"
 <br>53, Kabanbay batyr ave.,
 <br>Astana, Republic of Kazakhstan
 <br>010000.
-<br>Email: <?= tutor.useremail ?>
+<br>Email: <?= senderData.senderemail ?>
 <br>
 
   </body>
