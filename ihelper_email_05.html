@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+  </head>
+  <body>
+
+<p>Dear <?= senderData.fullname ?>,</p>
+
+<p>Congratulations on completing the tutoring period with one of our dear kids! Thank you for your great job and for ihelping children to become smarter. We hope this experience will be very beneficial for you and will motivate you to do even more good in the future.</p>
+
+<h3>To do:</h3>
+<ol>
+  <li>Fill out <b><a href= <?= senderData.endOfTermSurvey?>>this form</a></b>;</li>
+</ol>
+
+<h3>Useful links:</h3>
+<ol>
+  <li><a href= <?= senderData.tutorResources ?> >Tutor Resources; </a></li>
+  <li><a href= <?= senderData.telegramchat ?> >Telegram group chat (announcements);</a></li>
+  <li><a href= <?= senderData.academicMaterials ?> >Academic Materials;</a> </li>
+  <li><a href= <?= senderData.feedbackForm ?> >Feedback Form</a> (reach out to us with your ideas or suggestions); </li>
+</ol>
+
+<h3>Certificate details:</h3>
+<ol>
+  <li>Digital certificate link: <?= senderData.certificateLink ?>;</li>
+  <li>Print certificate: To receive the print version of the certificate contact the Main Coordinator of the IHelper Project directly or the Head of the NU Red Crescent Society.</li>
+</ol>
+
+<h4>Main Coordinator of the IHelper Project:</h4>
+<ul>
+  <li><?= senderData.maincoord ?></li>
+  <li><?= senderData.maincoordnum ?></li>
+  <li><?= senderData.maincoordemail ?></li>
+</ul>
+
+<h4>Head of the NU Red Crescent Society:</h4>
+<ul>
+  <li><?= senderData.nurchead ?></li>
+  <li><?= senderData.nurcheadnum ?></li>
+  <li><?= senderData.nurcheademail ?></li>
+
+</ul>
+
+<br>If you have any questions don't hesitate to contact me.
+<br>--
+<br>Kind regards, <?= senderData.sendername ?>.
+<br>                                                               
+<br><?= senderData.senderposition ?> of IHelper Project,
+<br>NU Red Crescent Society,
+<br>AOE "Nazarbayev University"
+<br>53, Kabanbay batyr ave.,
+<br>Astana, Republic of Kazakhstan
+<br>010000.
+<br>Email: <?= senderData.senderemail ?>
+<br>
+
+  </body>
+</html>
