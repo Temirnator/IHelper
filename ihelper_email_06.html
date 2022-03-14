@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+  </head>
+  <body>
+
+<p>Dear <?= senderData.fullname ?>,</p>
+
+<p>You have been banned from the project by the IHelper Team.
+Because you either:
+-were skipping Lesson Report Submission 2 times in a row;
+-skipped 4 times Lesson Report Submission in total;
+
+If you just forgot or were not able to submit your Lesson Reports then submit them now or as soon as possible by following <a href= <?= senderData.lessonReportsForm?>>this link</a> and filling <a href= <?= senderData.explanatoryForm?>>this form</a> to explain the situation.
+
+Following things are going to be done:
+Your child is going to be reassigned to another tutor;
+You are going to be put into the Blocklist*;
+
+*People in the Blocklist are probably going to be rejected to join the IHelper Project during the next recruitment unless a valid reason is presented.
+</p>
+
+<h3>To do:</h3>
+<ol>
+  <li>To remove yourself from the Blocklist fill out <a href= <?= senderData.explanatoryForm?>>this form</a> explaining your situation and providing evidence;</li>
+  <li>Submit Lesson Reports into <a href= <?= senderData.lessonReportsForm?>>this form</a> now or as soon as possible if you were conducting lessons but forgot or was not able to submit reports</li>
+</ol>
+
+<h3>Useful links:</h3>
+<ol>
+  <li><a href= <?= senderData.explanatoryForm?>>IHelper Explanatory Form;</a></li>
+  <li><a href= <?= senderData.lessonReportsForm?>>Lesson Reports Submission Form;</a></li>
+  <li><a href= <?= senderData.tutorResources ?> >Tutor Resources; </a></li>
+  <li><a href= <?= senderData.telegramchat ?> >Telegram group chat (announcements);</a></li>
+  <li><a href= <?= senderData.academicMaterials ?> >Academic Materials;</a> </li>
+  <li><a href= <?= senderData.feedbackForm ?> >Feedback Form</a> (reach out to us with your ideas or suggestions); </li>
+</ol>
+
+<br>If you have any questions don't hesitate to contact me.
+<br>--
+<br>Kind regards, <?= senderData.sendername ?>.
+<br>                                                               
+<br><?= senderData.senderposition ?> of IHelper Project,
+<br>NU Red Crescent Society,
+<br>AOE "Nazarbayev University"
+<br>53, Kabanbay batyr ave.,
+<br>Astana, Republic of Kazakhstan
+<br>010000.
+<br>Email: <?= senderData.senderemail ?>
+<br>
+
+  </body>
+</html>
